@@ -16,6 +16,8 @@ export default function ResumePage() {
   const experienceRef = useRef<HTMLSelectElement>(null);
   const visaRef = useRef<HTMLSelectElement>(null);
   const linkedinRef = useRef<HTMLInputElement>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
+  const [fileName, setFileName] = useState<string | null>(null);
 
 
   function handleFileClick() {
