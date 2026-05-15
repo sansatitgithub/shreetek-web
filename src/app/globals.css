@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+:root {
+  --color-navy: #0F172A;
+  --color-royal: #2563EB;
+  --color-electric: #0EA5E9;
+  --color-slate: #334155;
+  --color-slate-light: #64748B;
+  --color-bg-soft: #F8FAFC;
+  --color-white: #FFFFFF;
+  --color-cyan: #06B6D4;
+  --color-purple: #7C3AED;
+  --color-emerald: #10B981;
+  --color-body: #475569;
+}
+
+@theme inline {
+  --color-navy: var(--color-navy);
+  --color-royal: var(--color-royal);
+  --color-electric: var(--color-electric);
+  --color-slate: var(--color-slate);
+  --color-slate-light: var(--color-slate-light);
+  --color-bg-soft: var(--color-bg-soft);
+  --color-cyan: var(--color-cyan);
+  --color-purple: var(--color-purple);
+  --color-emerald: var(--color-emerald);
+  --color-body: var(--color-body);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  color: var(--color-body);
+  background: var(--color-bg-soft);
+  overflow-x: hidden;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #2563EB 0%, #0EA5E9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-dark {
+  background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.glass-dark {
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+}
+
+.blue-gradient {
+  background: linear-gradient(135deg, #2563EB 0%, #0EA5E9 100%);
+}
+
+.card-shadow {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+}
+
+.card-shadow-hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+}
+
+.section-spacing {
+  padding: 100px 0;
+}
+
+.card-equal-height {
+  height: 100%;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
