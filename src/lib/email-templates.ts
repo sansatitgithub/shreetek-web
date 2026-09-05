@@ -111,7 +111,7 @@ export function buildResumeEmail(data: {
           ${fieldRow('Location', data.location)}
           ${fieldRow('Years of Experience', data.experience)}
           ${fieldRow('Primary Skills', data.skills)}
-          ${fieldRow('Visa Status', data.visaStatus)}
+          ${fieldRow('Work Authorization', data.visaStatus)}
           ${fieldRow('LinkedIn Profile', data.linkedin || 'Not provided')}
           ${fieldRow('Additional Comments', data.comments || 'Not provided')}
         </table>

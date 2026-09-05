@@ -5,7 +5,7 @@ import { MapPin, Phone, Mail, Clock, Send, MessageSquare, HelpCircle, Briefcase,
 import { useState, useRef, FormEvent } from "react";
 
 const contactCards = [
-  { icon: MapPin, title: "Office Address", value: "41642 Bostonian Place, Aldie, VA 20105", color: "#2563EB" },
+  { icon: MapPin, title: "Office Address", value: "22375 Broderick Drive, Suite 165 – A109, Sterling, VA 20166", color: "#2563EB" },
   { icon: Phone, title: "Phone", value: "+1 (703) 599-0008", color: "#0EA5E9" },
   { icon: Mail, title: "Email", value: "info@shreetek.com", color: "#7C3AED" },
   { icon: Clock, title: "Business Hours", value: "Mon-Fri: 9AM - 6PM EST", color: "#10B981" },
@@ -157,8 +157,8 @@ export default function ContactPage() {
                       <option>IT Staffing</option>
                       <option>Permanent Hiring</option>
                       <option>Contract Staffing</option>
-                      <option>H1B Transfer Support</option>
-                      <option>GC Processing</option>
+                      <option>Contract-to-Hire</option>
+                      <option>Recruitment Process Outsourcing</option>
                       <option>Software Development</option>
                       <option>Other</option>
                     </select>
@@ -212,7 +212,7 @@ export default function ContactPage() {
 
               <div className="bg-white rounded-3xl p-8 text-center border border-slate-100 shadow-sm hover:shadow-lg transition-all">
                 <MapPin size={48} className="text-[#2563EB] mx-auto mb-4" />
-                <p className="text-[#0F172A] font-bold">Aldie, Virginia</p>
+                <p className="text-[#0F172A] font-bold">Sterling, Virginia</p>
                 <p className="text-[#64748B] text-sm">Serving clients nationwide</p>
               </div>
             </motion.div>

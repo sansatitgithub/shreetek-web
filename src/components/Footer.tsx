@@ -9,8 +9,8 @@ const footerLinks = {
     { name: "IT Staffing", href: "/recruitment#it-staffing" },
     { name: "Permanent Hiring", href: "/recruitment#permanent" },
     { name: "Contract Staffing", href: "/recruitment#contract" },
-    { name: "H1B Transfer Support", href: "/recruitment#h1b" },
-    { name: "GC Processing", href: "/recruitment#gc" },
+    { name: "Contract-to-Hire", href: "/recruitment#contract-to-hire" },
+    { name: "Recruitment Process Outsourcing", href: "/recruitment#rpo" },
     { name: "Software Development", href: "/software" },
   ],
   company: [
@@ -64,7 +64,7 @@ export default function Footer() {
             <div className="space-y-4">
               <div className="flex items-center gap-3 text-white/60">
                 <MapPin size={18} className="text-[#0EA5E9]" />
-                <span>41642 Bostonian Place, Aldie, VA 20105</span>
+                <span>22375 Broderick Drive, Suite 165 – A109, Sterling, VA 20166</span>
               </div>
               <div className="flex items-center gap-3 text-white/60">
                 <Phone size={18} className="text-[#0EA5E9]" />

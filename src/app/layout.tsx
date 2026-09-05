@@ -18,8 +18,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Shreetek Inc. | Enterprise Technology & Workforce Solutions",
-  description: "Shreetek Inc. delivers elite technical staffing and software solutions. Specializing in IT staffing, H1B transfers, GC processing, and enterprise software development.",
-  keywords: "IT staffing, software development, H1B transfer, GC processing, enterprise solutions, recruitment, Virginia",
+  description: "Shreetek Inc. delivers elite technical staffing and software solutions. Specializing in IT staffing, contract-to-hire, recruitment process outsourcing, and enterprise software development.",
+  keywords: "IT staffing, software development, contract-to-hire, recruitment process outsourcing, vendor management, enterprise solutions, recruitment, Virginia",
 };
 
 export default function RootLayout({

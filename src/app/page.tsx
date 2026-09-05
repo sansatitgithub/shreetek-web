@@ -11,14 +11,14 @@ const heroSlides = [
     image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=80",
     badge: "Transforming Workforce & Technology",
     title: "Enterprise Solutions for Modern Business",
-    desc: "Shreetek Inc. delivers elite technical staffing and bespoke software solutions. From H1B transfers to enterprise software development, we empower American businesses with world-class talent.",
+    desc: "Shreetek Inc. delivers elite technical staffing and bespoke software solutions, empowering American businesses with world-class talent and enterprise-grade engineering.",
   },
   {
     id: 2,
     image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1920&q=80",
     badge: "Elite Technical Recruitment",
     title: "Premier Staffing Partner for US Companies",
-    desc: "Contract staffing, permanent hiring, H1B transfers, and GC processing. Our 48-hour placement guarantee ensures you get the right talent, fast.",
+    desc: "Contract staffing, permanent hiring, and contract-to-hire placements — a streamlined process built to get you the right talent, fast.",
   },
   {
     id: 3,
@@ -30,38 +30,38 @@ const heroSlides = [
   {
     id: 4,
     image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1920&q=80",
-    badge: "H1B & Immigration Experts",
-    title: "Seamless Immigration Support",
-    desc: "Expert H1B transfers and GC processing with dedicated legal consultation. Retain your talent without employment gaps during the transfer process.",
+    badge: "Client-First Partnership",
+    title: "A Staffing Partner Invested in Your Success",
+    desc: "Dedicated account managers, transparent communication, and flexible engagement models built around your hiring goals from day one.",
   },
   {
     id: 5,
     image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80",
     badge: "USA-Based Operations",
     title: "Your Trusted Domestic Tech Partner",
-    desc: "Based in Aldie, VA, we provide the accountability, timezone alignment, and regulatory compliance that global outsourcing can't match.",
+    desc: "Based in Sterling, VA, we provide the accountability, timezone alignment, and regulatory compliance that global outsourcing can't match.",
   },
 ];
 
 const stats = [
   { value: "5,000+", label: "Technical Professionals" },
   { value: "98%", label: "Client Satisfaction" },
-  { value: "48hrs", label: "Average Placement" },
+  { value: "11+", label: "Years of Experience" },
   { value: "500+", label: "Companies Served" },
 ];
 
 const services = [
   { icon: Users, title: "IT Staffing", desc: "Contract, permanent, and executive placement for technical roles", href: "/recruitment" },
-  { icon: Shield, title: "H1B Transfer", desc: "Expert H1B visa transfer and immigration support", href: "/recruitment#h1b" },
-  { icon: Award, title: "GC Processing", desc: "Green Card processing guidance for eligible candidates", href: "/recruitment#gc" },
+  { icon: Shield, title: "Contract-to-Hire", desc: "Trial-to-permanent staffing that lets you evaluate talent before committing", href: "/recruitment#contract-to-hire" },
+  { icon: Award, title: "Recruitment Process Outsourcing", desc: "Fully outsourced hiring pipeline, from sourcing through onboarding, run by our dedicated recruiting team", href: "/recruitment#rpo" },
   { icon: Code2, title: "Software Development", desc: "Full-cycle enterprise software and SaaS development", href: "/software" },
   { icon: Cloud, title: "Cloud Solutions", desc: "AWS, Azure, and GCP cloud architecture and migration", href: "/software#cloud" },
   { icon: Brain, title: "AI & Automation", desc: "Machine learning and intelligent automation solutions", href: "/software#ai" },
 ];
 
 const whyUs = [
-  { icon: Clock, title: "48-Hour Placement", desc: "Quick placement with dedicated staff assignment for urgent needs" },
-  { icon: Shield, title: "H1B Experts", desc: "Specialized immigration support with proven track record" },
+  { icon: Clock, title: "Rapid Placement Process", desc: "Dedicated staff assignment and a streamlined process built for urgent hiring needs" },
+  { icon: Shield, title: "High Retention Rate", desc: "Placements that stay — client tenure that beats industry benchmarks" },
   { icon: Target, title: "Quality Vetting", desc: "4-tier evaluation process ensuring top-tier professionals" },
   { icon: Globe, title: "US-Based", desc: "Full timezone alignment and US jurisdiction compliance" },
   { icon: Handshake, title: "Dedicated Support", desc: "Direct access to experienced account managers" },
@@ -167,7 +167,7 @@ export default function Home() {
                 {[
                   { icon: Users, text: "5,000+ Talent Pool" },
                   { icon: Award, text: "98% Success Rate" },
-                  { icon: Clock, text: "48hr Placement" },
+                  { icon: Globe, text: "Nationwide Reach" },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-2 lg:gap-3">
                     <div className="w-8 h-8 lg:w-10 lg:h-10 rounded-lg bg-white/10 flex items-center justify-center">
@@ -228,10 +228,10 @@ export default function Home() {
                 >
                   <div className="flex items-center gap-2 mb-2">
                     <CheckCircle size={16} className="text-emerald-400" />
-                    <span className="text-white font-medium">H1B Transfers</span>
+                    <span className="text-white font-medium">Client Retention</span>
                   </div>
-                  <div className="text-xl font-bold text-white">150+</div>
-                  <div className="text-white/40 text-xs">Processed Successfully</div>
+                  <div className="text-xl font-bold text-white">95%+</div>
+                  <div className="text-white/40 text-xs">Renew Year Over Year</div>
                 </motion.div>
 
                 <div className="w-80 h-80 mx-auto">

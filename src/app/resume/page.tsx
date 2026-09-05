@@ -90,7 +90,7 @@ export default function ResumePage() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               { title: "Top US Companies", desc: "Access to Fortune 500 and leading technology companies" },
-              { title: "H1B Support", desc: "Expert assistance with H1B transfers and immigration issues" },
+              { title: "Dedicated Recruiter Support", desc: "One-on-one guidance from application through offer and onboarding" },
               { title: "Career Growth", desc: "Resume review, interview prep, and career guidance" },
             ].map((item, i) => (
               <motion.div key={item.title} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
@@ -159,14 +159,11 @@ export default function ResumePage() {
                 </div>
               </div>
               <div>
-                <label className="block text-sm font-semibold text-[#0F172A] mb-2">Visa Status</label>
+                <label className="block text-sm font-semibold text-[#0F172A] mb-2">Work Authorization</label>
                 <select ref={visaRef} className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-[#F8FAFC] focus:border-[#2563EB] focus:outline-none focus:ring-2 focus:ring-[#2563EB]/20 transition-all">
                   <option value="">Select...</option>
-                  <option>US Citizen</option>
-                  <option>Green Card</option>
-                  <option>H1B (Current)</option>
-                  <option>H1B (Transfer Needed)</option>
-                  <option>OPT / F-1</option>
+                  <option>No Sponsorship Required</option>
+                  <option>Sponsorship Required</option>
                   <option>Other</option>
                 </select>
               </div>

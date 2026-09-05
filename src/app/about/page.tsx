@@ -7,7 +7,7 @@ import Link from "next/link";
 const timeline = [
   { year: "2015", title: "Founded in Virginia", desc: "Established in Aldie, VA with a vision to transform technical recruitment in the USA" },
   { year: "2018", title: "Service Expansion", desc: "Expanded to include software development, cloud solutions, and enterprise applications" },
-  { year: "2020", title: "Rapid Growth", desc: "Achieved 500+ successful placements and launched specialized H1B transfer services" },
+  { year: "2020", title: "Rapid Growth", desc: "Achieved 500+ successful placements and expanded staffing operations into new industry verticals" },
   { year: "2023", title: "Industry Leadership", desc: "Recognized as a premier IT staffing partner serving Fortune 500 companies nationwide" },
   { year: "2024", title: "AI-Powered Innovation", desc: "Integrated AI-powered recruitment tools and expanded software development capabilities" },
 ];
@@ -37,7 +37,7 @@ export default function AboutPage() {
             <h1 className="text-5xl font-bold text-white mb-6">Building America's Tech Future</h1>
             <p className="text-lg text-white/70 leading-relaxed max-w-2xl">
               Shreetek Inc. is a premier US-based technology solutions company specializing in elite technical staffing 
-              and custom software development. Headquartered in Aldie, Virginia, we bridge the gap between world-class 
+              and custom software development. Headquartered in Sterling, Virginia, we bridge the gap between world-class
               IT professionals and American companies that need them most.
             </p>
           </motion.div>
@@ -54,9 +54,9 @@ export default function AboutPage() {
               </div>
               <h2 className="text-3xl font-bold text-[#0F172A] mb-4">Our Mission</h2>
               <p className="text-lg text-[#64748B] leading-relaxed">
-                To empower American businesses with exceptional technical talent and innovative software solutions. 
-                We strive to be the most trusted recruitment partner in the US, delivering quality hires that drive 
-                business success while supporting immigration processes for international talent.
+                To empower American businesses with exceptional technical talent and innovative software solutions.
+                We strive to be the most trusted recruitment partner in the US, delivering quality hires that drive
+                lasting business success for every client we serve.
               </p>
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
@@ -129,7 +129,7 @@ export default function AboutPage() {
             {[
               { value: "5,000+", label: "Placements", icon: Users },
               { value: "98%", label: "Client Satisfaction", icon: Award },
-              { value: "48hrs", label: "Avg. Placement", icon: Clock },
+              { value: "11+", label: "Years Experience", icon: Clock },
               { value: "500+", label: "Companies", icon: Globe },
             ].map((s, i) => (
               <motion.div key={s.label} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="text-center">
@@ -155,14 +155,14 @@ export default function AboutPage() {
               </span>
               <h2 className="text-4xl font-bold text-[#0F172A] mb-6">Based in Virginia's Tech Corridor</h2>
               <p className="text-lg text-[#64748B] mb-8 leading-relaxed">
-                Located in Aldie, Virginia, in the heart of the Dulles tech corridor, Shreetek benefits from proximity 
+                Located in Sterling, Virginia, in the heart of the Dulles tech corridor, Shreetek benefits from proximity
                 to top technology companies, universities, and talent pools across the Washington D.C. metropolitan area.
               </p>
               <div className="flex items-center gap-4">
                 <MapPin size={24} className="text-[#2563EB]" />
                 <div>
                   <div className="font-bold text-[#0F172A]">Shreetek Inc.</div>
-                  <div className="text-[#64748B]">41642 Bostonian Place, Aldie, VA 20105</div>
+                  <div className="text-[#64748B]">22375 Broderick Drive, Suite 165 – A109, Sterling, VA 20166</div>
                 </div>
               </div>
             </motion.div>

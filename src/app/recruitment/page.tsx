@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Briefcase, Users, Clock, Shield, Award, Globe, ArrowRight, CheckCircle, Phone, Mail } from "lucide-react";
+import { Briefcase, Users, Clock, Shield, Award, ArrowRight, CheckCircle, Phone, Mail, Repeat } from "lucide-react";
 import Link from "next/link";
 
 const staffingTypes = [
@@ -9,29 +9,29 @@ const staffingTypes = [
     id: "contract",
     icon: Clock,
     title: "Contract Staffing",
-    desc: "Flexible workforce solutions for project-based needs. Scale your team quickly with pre-vetted professionals within 48 hours.",
-    features: ["Short & long-term contracts", "Quick deployment within 48 hours", "Scalable team expansion", "Cost-effective project staffing", "No long-term commitments"],
+    desc: "Flexible workforce solutions for project-based needs. Scale your team quickly with pre-vetted, ready-to-deploy professionals.",
+    features: ["Short & long-term contracts", "Rapid, streamlined deployment", "Scalable team expansion", "Cost-effective project staffing", "No long-term commitments"],
   },
   {
     id: "permanent",
     icon: Users,
     title: "Permanent Staffing",
     desc: "Find the perfect long-term fit for your organization. Thorough vetting ensures quality hires that stay and grow with your company.",
-    features: ["Direct hire placement", "Background verification", "Cultural fit assessment", "Reference checks", "Guaranteed replacement"],
+    features: ["Direct hire placement", "Background verification", "Cultural fit assessment", "Reference checks", "Replacement support included"],
   },
   {
-    id: "h1b",
-    icon: Shield,
-    title: "H1B Transfer Support",
-    desc: "Expert H1B visa transfer services with legal guidance. Retain your talent without employment gaps during the transfer process.",
-    features: ["Seamless H1B transfer", "Expert legal consultation", "Quick processing timeline", "Work continuity", "USCIS compliance"],
+    id: "contract-to-hire",
+    icon: Repeat,
+    title: "Contract-to-Hire",
+    desc: "Evaluate talent on the job before extending a permanent offer, with a seamless conversion process when you're ready.",
+    features: ["Risk-free trial period", "Seamless conversion to full-time", "Flexible contract length", "Performance-based hiring", "No conversion fees after 6 months"],
   },
   {
-    id: "gc",
+    id: "rpo",
     icon: Award,
-    title: "GC Processing Support",
-    desc: "Green Card processing guidance for eligible candidates. Navigate the complex immigration process with confidence.",
-    features: ["PERM certification", "I-140 petition filing", "I-485 adjustment", "Priority date tracking", "Attorney coordination"],
+    title: "Recruitment Process Outsourcing",
+    desc: "Hand us your entire hiring pipeline — sourcing, screening, and onboarding — managed as a seamless extension of your internal team.",
+    features: ["End-to-end hiring management", "Dedicated recruiting team", "Scalable to hiring volume", "Employer branding support", "Full pipeline reporting"],
   },
   {
     id: "executive",
@@ -41,11 +41,11 @@ const staffingTypes = [
     features: ["C-suite placement", "VP & Director search", "Confidential campaigns", "Industry mapping", "Retained search"],
   },
   {
-    id: "bench",
-    icon: Globe,
-    title: "Bench Sales",
-    desc: "Quick placement of available technical professionals currently on bench. Immediate availability for urgent client requirements.",
-    features: ["Immediate availability", "Pre-screened candidates", "Rate negotiation", "Quick onboarding", "Dedicated support"],
+    id: "vendor-management",
+    icon: Shield,
+    title: "Vendor Management (MSP)",
+    desc: "Centralized oversight of your contingent workforce program, consolidating multiple staffing vendors under one accountable partner.",
+    features: ["Single point of accountability", "Multi-vendor coordination", "Rate & compliance standardization", "Consolidated reporting", "Program governance"],
   },
 ];
 
@@ -75,8 +75,8 @@ export default function RecruitmentPage() {
             </span>
             <h1 className="text-5xl font-bold text-white mb-6">Elite Technical Staffing for American Companies</h1>
             <p className="text-lg text-white/70 mb-10 leading-relaxed">
-              From H1B transfers to permanent placements, we connect you with world-class IT professionals. 
-              Our 48-hour placement guarantee ensures you get the right talent, fast.
+              From contract staffing to permanent placements, we connect you with world-class IT professionals.
+              Our streamlined process is built to get you the right talent quickly, without the guesswork.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/contact" className="px-8 py-4 text-base font-bold text-white blue-gradient rounded-xl hover:shadow-xl transition-all flex items-center gap-2">
@@ -96,7 +96,7 @@ export default function RecruitmentPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
               { value: "5,000+", label: "Technical Candidates" },
-              { value: "48hrs", label: "Average Placement" },
+              { value: "11+", label: "Years Experience" },
               { value: "98%", label: "Client Satisfaction" },
               { value: "500+", label: "Companies Served" },
             ].map((s, i) => (
